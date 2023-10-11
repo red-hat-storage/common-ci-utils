@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.2.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "common-ci-utils"
+version = "0.1.0"
+authors = [
+  { name="IBM Storage QE", email="ocs-qe-ecosystem@redhat.com" },
+]
+description = "Place for common utils, functionality and libraries used in the testing and CI."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/red-hat-storage/common-ci-utils"
+"Bug Tracker" = "https://github.com/red-hat-storage/common-ci-utils/issues"

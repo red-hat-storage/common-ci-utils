@@ -17,7 +17,7 @@ def find_folders_with_yaml_files(path):
 
 setup(
     name="common-ci-utils",
-    version="0.1",
+    version="0.1.0",
     packages=find_namespace_packages(),
     include_package_data=True,
     package_data=find_folders_with_yaml_files("common_ci_utils/config"),
