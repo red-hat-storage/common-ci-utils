@@ -6,8 +6,8 @@ setting permissions on directory/file etc ...
 import logging
 import os
 
-from common.command_runner import exec_cmd
-from common.exceptions import PermissionsFailedToChange
+from common_ci_utils.command_runner import exec_cmd
+from common_ci_utils.exceptions import PermissionsFailedToChange
 
 log = logging.getLogger(__name__)
 

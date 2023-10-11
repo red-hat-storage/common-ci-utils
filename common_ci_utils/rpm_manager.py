@@ -5,8 +5,8 @@ and removing rpms.
 
 import logging
 
-from common.command_runner import exec_cmd
-from common.exceptions import RPMInstallationFailed
+from common_ci_utils.command_runner import exec_cmd
+from common_ci_utils.exceptions import RPMInstallationFailed
 
 log = logging.getLogger(__name__)
 

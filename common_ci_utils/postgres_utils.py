@@ -4,7 +4,7 @@ This module handles the selection of postgresql version
 
 import logging
 
-from common.command_runner import exec_cmd
+from common_ci_utils.command_runner import exec_cmd
 
 log = logging.getLogger(__name__)
 
