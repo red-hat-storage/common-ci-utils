@@ -4,6 +4,8 @@ import os
 # pip install -U setuptools
 from setuptools import setup, find_namespace_packages
 
+__version__ = "0.0.0"
+
 def find_folders_with_yaml_files(path):
     config_dirs = {}
     yaml_folders = set()
@@ -16,8 +18,8 @@ def find_folders_with_yaml_files(path):
     return config_dirs
 
 setup(
-    name="common-ci-utils",
-    version="0.1",
+    name="common_ci_utils",
+    version=__version__,
     packages=find_namespace_packages(),
     include_package_data=True,
     package_data=find_folders_with_yaml_files("common_ci_utils/config"),
