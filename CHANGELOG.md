@@ -2,6 +2,21 @@
 
 
 
+## v0.0.1 (2023-11-03)
+
+### Unknown
+
+* Merge pull request #5 from vavuthu/module_for_services
+
+service module ([`5cd9f36`](https://github.com/red-hat-storage/common-ci-utils/commit/5cd9f360f963950efaf60ea90a996661ad4f68c9))
+
+* service module
+
+Signed-off-by: vavuthu &lt;vavuthu@redhat.com&gt; ([`982f4bb`](https://github.com/red-hat-storage/common-ci-utils/commit/982f4bb07a22c3aa81b4da20658a2fdf8990e4fb))
+
+* Merge pull request #4 from petr-balogh/pypi-requirements ([`7a7e846`](https://github.com/red-hat-storage/common-ci-utils/commit/7a7e846bf629596b9987044e0fbfb5123ef727f9))
+
+
 ## v0.0.0 (2023-10-11)
 
 ### Unknown

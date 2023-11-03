@@ -4,7 +4,7 @@ import os
 # pip install -U setuptools
 from setuptools import setup, find_namespace_packages
 
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 
 def find_folders_with_yaml_files(path):
     config_dirs = {}
