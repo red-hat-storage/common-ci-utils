@@ -3,7 +3,7 @@ This module contains various user defined exceptions
 """
 
 
-class RPMInstallationFailed(Exception):
+class AggregateNodeStatusCheckFailed(Exception):
     pass
 
 
@@ -11,9 +11,21 @@ class PermissionsFailedToChange(Exception):
     pass
 
 
-class StorageStatusCheckFailed(Exception):
+class RPMInstallationFailed(Exception):
     pass
 
 
-class AggregateNodeStatusCheckFailed(Exception):
+class ServiceRunningFailed(Exception):
+    pass
+
+
+class ServiceStartFailed(Exception):
+    pass
+
+
+class ServiceStopFailed(Exception):
+    pass
+
+
+class StorageStatusCheckFailed(Exception):
     pass
