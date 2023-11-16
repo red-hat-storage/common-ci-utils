@@ -6,6 +6,7 @@ from setuptools import setup, find_namespace_packages
 
 __version__ = "0.0.1"
 
+
 def find_folders_with_yaml_files(path):
     config_dirs = {}
     yaml_folders = set()
@@ -16,6 +17,7 @@ def find_folders_with_yaml_files(path):
     for folder in yaml_folders:
         config_dirs[folder.replace(os.path.sep, '.')] = ["*.yaml"]
     return config_dirs
+
 
 setup(
     name="common_ci_utils",
