@@ -32,9 +32,4 @@ setup(
     description=(
         "Commonly used functions for the CI/testing use cases."
     ),
-    install_requires=[
-        "jinja2",
-        "pyyaml",
-        "requests",
-    ],
 )
