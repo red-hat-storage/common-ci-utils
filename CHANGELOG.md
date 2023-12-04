@@ -2,6 +2,37 @@
 
 
 
+## v0.0.3 (2023-12-04)
+
+### Unknown
+
+* Merge pull request #13 from vavuthu/remote_connection_module
+
+remote connection module ([`ad62398`](https://github.com/vavuthu/common-ci-utils/commit/ad623982088bd87b49c8f8b65f27c750a73b0c93))
+
+* Merge pull request #12 from vavuthu/fix_package_dependancy
+
+Add required packages in pyproject.toml ([`ff74acc`](https://github.com/vavuthu/common-ci-utils/commit/ff74acc88e5c6097c423f6ce8903c3d121522665))
+
+* remote connection module
+
+Signed-off-by: vavuthu &lt;vavuthu@redhat.com&gt; ([`d5956bb`](https://github.com/vavuthu/common-ci-utils/commit/d5956bbe29d072adec1f998a33a06d45f18abc60))
+
+* Add required packages in pyproject.toml
+
+Signed-off-by: vavuthu &lt;vavuthu@redhat.com&gt; ([`834b938`](https://github.com/vavuthu/common-ci-utils/commit/834b938b18d16db3ee223dfb98d28202fdb9a620))
+
+* Merge pull request #10 from petr-balogh/release-documentation
+
+Release DOC ([`c5e7aa2`](https://github.com/vavuthu/common-ci-utils/commit/c5e7aa2ce11d65509394484e4595c582d239856a))
+
+* Release DOC ([`1fb7ae0`](https://github.com/vavuthu/common-ci-utils/commit/1fb7ae095c412622cfc41b14b518d96254db6e0c))
+
+* Merge pull request #9 from vavuthu/release_002
+
+release 0.0.2 ([`d1039f9`](https://github.com/vavuthu/common-ci-utils/commit/d1039f9fdcab8c4dc42e05aa683cf94e73aaf047))
+
+
 ## v0.0.2 (2023-11-21)
 
 ### Unknown
