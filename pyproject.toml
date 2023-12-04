@@ -16,6 +16,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "jinja2",
+    "pyyaml",
+    "requests",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/red-hat-storage/common-ci-utils"
