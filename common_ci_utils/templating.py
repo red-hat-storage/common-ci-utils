@@ -2,6 +2,7 @@
 This module mainly focuses on rendering jinja2 templates
 """
 
+import json
 import yaml
 
 from jinja2 import Environment, FileSystemLoader
@@ -66,3 +67,31 @@ class Templating:
         j2_env.filters["to_nice_yaml"] = to_nice_yaml
         j2_template = j2_env.get_template(template_path)
         return j2_template.render(**data)
+
+
+def dump_data_to_json(data, json_file):
+    """
+    Dump data to json file
+
+    Args:
+        data (dict): data to dump to the json file
+        json_file (str): file path to json file
+
+    """
+    with open(json_file, "w") as fd:
+        json.dump(data, fd)
+
+
+def json_to_dict(json_file):
+    """
+    Converts JSON to dictionary format
+
+    Args:
+        json_file (str): file path to json file
+
+    Returns:
+         dict: JSON data
+
+    """
+    with open(json_file, "r") as fd:
+        return json.loads(fd.read())
