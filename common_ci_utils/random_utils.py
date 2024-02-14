@@ -86,11 +86,11 @@ def generate_random_files(dir, amount=1, min_size="1M", max_size="1M"):
         unit = size[-1]
         size = int(size[:-1])
         if unit == "K":
-            return size
-        if unit == "M":
             return size * 1024
-        if unit == "G":
+        if unit == "M":
             return size * 1024 * 1024
+        if unit == "G":
+            return size * 1024 * 1024 * 1024
         else:
             raise ValueError("Invalid size unit. Use 'K', 'M', or 'G'.")
 
