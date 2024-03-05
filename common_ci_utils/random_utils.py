@@ -68,34 +68,8 @@ def generate_random_files(dir, amount=1, min_size="1M", max_size="1M"):
 
     """
 
-    def _parse_dd_size_to_kb(size):
-        """
-        Parse a size given in the format understood by the 'dd' command to a number of kilobytes
-
-        Args:
-            size (str): The size to parse
-
-        Returns:
-            int: The size in kilobytes
-
-        Raises:
-            ValueError: If the size unit is not of the format understood by the 'dd' command
-                        i.e an int followed by 'K', 'M', or 'G'.
-
-        """
-        unit = size[-1]
-        size = int(size[:-1])
-        if unit == "K":
-            return size
-        if unit == "M":
-            return size * 1024
-        if unit == "G":
-            return size * 1024 * 1024
-        else:
-            raise ValueError("Invalid size unit. Use 'K', 'M', or 'G'.")
-
-    min_size_kb = _parse_dd_size_to_kb(min_size)
-    max_size_kb = _parse_dd_size_to_kb(max_size)
+    min_size_kb = parse_size_to_bytes(min_size)
+    max_size_kb = parse_size_to_bytes(max_size)
 
     if min_size_kb > max_size_kb:
         raise ValueError("min_size cannot be greater than max_size")
@@ -116,3 +90,30 @@ def generate_random_files(dir, amount=1, min_size="1M", max_size="1M"):
         files_generated.append(obj_name)
 
     return files_generated
+
+
+def parse_size_to_bytes(size):
+    """
+    Parse a size given in the format understood by the 'dd' command to a number of bytes
+
+    Args:
+        size (str): The size to parse
+
+    Returns:
+        int: The size in bytes
+
+    Raises:
+        ValueError: If the size unit is not of the format understood by the 'dd' command
+                    i.e an int followed by 'K', 'M', or 'G'.
+
+    """
+    unit = size[-1]
+    size = int(size[:-1])
+    if unit == "K":
+        return size * 1024
+    if unit == "M":
+        return size * 1024 * 1024
+    if unit == "G":
+        return size * 1024 * 1024 * 1024
+    else:
+        raise ValueError("Invalid size unit. Use 'K', 'M', or 'G'.")
