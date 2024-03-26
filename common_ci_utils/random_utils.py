@@ -19,7 +19,7 @@ def generate_random_hex(length=20):
         str: A random hexamiadecimal string.
 
     """
-    cmd = f"openssl rand -hex {length}"
+    cmd = f"openssl rand -base64 {length}"
     completed_process = exec_cmd(cmd)
     stdout = completed_process.stdout
     return stdout.decode("utf-8").strip()
