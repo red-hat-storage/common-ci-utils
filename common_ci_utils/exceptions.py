@@ -29,3 +29,7 @@ class ServiceStopFailed(Exception):
 
 class StorageStatusCheckFailed(Exception):
     pass
+
+
+class WrongResponseError(Exception):
+    pass
